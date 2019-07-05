@@ -1,0 +1,106 @@
+2019-07-04 09:11:22,204 CRIT Supervisor running as root (no user in config file)
+2019-07-04 09:11:22,206 INFO supervisord started with pid 25
+2019-07-04 09:11:23,209 INFO spawned: 'jupyter_notebook' with pid 28
+2019-07-04 09:11:23,210 INFO spawned: 'tensorboard' with pid 29
+2019-07-04 09:11:23,212 INFO spawned: 'digits_srv' with pid 30
+2019-07-04 09:11:23,213 INFO spawned: 'nginx' with pid 31
+2019-07-04 09:11:23,237 DEBG fd 24 closed, stopped monitoring <POutputDispatcher at 140657644679680 for <Subprocess at 140657653733640 with name nginx in state STARTING> (stderr)>
+2019-07-04 09:11:23,979 DEBG 'jupyter_notebook' stderr output:
+[I 09:11:23.978 NotebookApp] Copying /root/.ipython/kernels -> /root/.local/share/jupyter/kernels
+
+2019-07-04 09:11:23,991 DEBG 'jupyter_notebook' stderr output:
+[I 09:11:23.991 NotebookApp] Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret
+
+2019-07-04 09:11:24,470 DEBG 'jupyter_notebook' stderr output:
+[W 09:11:24.467 NotebookApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+
+2019-07-04 09:11:24,470 INFO success: jupyter_notebook entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-07-04 09:11:24,470 INFO success: tensorboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-07-04 09:11:24,471 INFO success: digits_srv entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-07-04 09:11:24,471 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-07-04 09:11:24,478 DEBG 'jupyter_notebook' stderr output:
+[I 09:11:24.477 NotebookApp] Serving notebooks from local directory: /dli
+
+2019-07-04 09:11:24,478 DEBG 'jupyter_notebook' stderr output:
+[I 09:11:24.478 NotebookApp] The Jupyter Notebook is running at:
+
+2019-07-04 09:11:24,479 DEBG 'jupyter_notebook' stderr output:
+[I 09:11:24.478 NotebookApp] http://(e00ca3a3ac1c or 127.0.0.1):8888/g0YLQv2E/
+
+2019-07-04 09:11:24,479 DEBG 'jupyter_notebook' stderr output:
+[I 09:11:24.479 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+
+2019-07-04 09:11:25,297 DEBG 'tensorboard' stderr output:
+2019-07-04 09:11:25.296911: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:898] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+
+2019-07-04 09:11:25,297 DEBG 'tensorboard' stderr output:
+2019-07-04 09:11:25.297404: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+totalMemory: 11.17GiB freeMemory: 11.10GiB
+2019-07-04 09:11:25.297446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1394] Ignoring visible gpu device (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7) with Cuda compute capability 3.7. The minimum required Cuda capability is 5.2.
+
+2019-07-04 09:11:25,297 DEBG 'tensorboard' stderr output:
+2019-07-04 09:11:25.297471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-07-04 09:11:25.297485: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2019-07-04 09:11:25.297497: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+
+2019-07-04 09:11:25,607 DEBG 'tensorboard' stderr output:
+TensorBoard 1.7.0 at http://e00ca3a3ac1c:6006/GklsFt28 (Press CTRL+C to quit)
+
+2019-07-04 09:11:26,302 DEBG 'digits_srv' stdout output:
+  ___ ___ ___ ___ _____ ___
+ |   \_ _/ __|_ _|_   _/ __|
+ | |) | | (_ || |  | | \__ \
+ |___/___\___|___| |_| |___/ 6.1.1
+
+2019-07-04 09:11:26 [INFO ] Loaded 1 jobs.
+
+2019-07-04 09:11:29,192 DEBG 'jupyter_notebook' stderr output:
+[W 09:11:29.192 NotebookApp] 405 HEAD /g0YLQv2E/notebooks/tasks/task1/task/Train%20a%20Model-kr.ipynb (127.0.0.1) 6.06ms referer=None
+
+2019-07-04 09:12:14,107 DEBG 'jupyter_notebook' stderr output:
+[I 09:12:14.106 NotebookApp] Writing notebook-signing key to /root/.local/share/jupyter/notebook_secret
+
+2019-07-04 09:12:14,107 DEBG 'jupyter_notebook' stderr output:
+[W 09:12:14.107 NotebookApp] Notebook tasks/task1/task/Train a Model-kr.ipynb is not trusted
+
+2019-07-04 09:12:15,155 DEBG 'jupyter_notebook' stderr output:
+[I 09:12:15.154 NotebookApp] Kernel started: 370cef6b-24db-43ee-a368-fa379e9603d1
+
+2019-07-04 09:12:15,160 DEBG 'jupyter_notebook' stderr output:
+[W 09:12:15.160 NotebookApp] 404 GET /g0YLQv2E/notebooks/tasks/task1/task/images/NewClassificationModel.png (127.0.0.1): No such file or directory: tasks/task1/task/images/NewClassificationModel.png
+
+2019-07-04 09:12:15,164 DEBG 'jupyter_notebook' stderr output:
+[W 09:12:15.164 NotebookApp] 404 GET /g0YLQv2E/notebooks/tasks/task1/task/images/NewClassificationModel.png (127.0.0.1) 4.54ms referer=http://ec2-3-14-82-97.us-east-2.compute.amazonaws.com/g0YLQv2E/notebooks/tasks/task1/task/Train%20a%20Model-kr.ipynb
+
+2019-07-04 09:12:15,166 DEBG 'jupyter_notebook' stderr output:
+[I 09:12:15.166 NotebookApp] 302 GET /g0YLQv2E/notebooks/tasks/task1/task/images/DLI%20Header.png (127.0.0.1) 0.96ms
+
+2019-07-04 09:12:15,167 DEBG 'jupyter_notebook' stderr output:
+[I 09:12:15.167 NotebookApp] 302 GET /g0YLQv2E/notebooks/tasks/task1/task/images/choosenetwork.PNG (127.0.0.1) 0.90ms
+
+2019-07-04 09:12:15,391 DEBG 'jupyter_notebook' stderr output:
+[I 09:12:15.391 NotebookApp] 302 GET /g0YLQv2E/notebooks/tasks/task1/task/images/LouieTest1.PNG (127.0.0.1) 0.63ms
+
+2019-07-04 09:12:15,403 DEBG 'jupyter_notebook' stderr output:
+[I 09:12:15.403 NotebookApp] 302 GET /g0YLQv2E/notebooks/tasks/task1/task/images/DIGITSHome.PNG (127.0.0.1) 0.62ms
+
+2019-07-04 09:12:15,421 DEBG 'jupyter_notebook' stderr output:
+[I 09:12:15.421 NotebookApp] 302 GET /g0YLQv2E/notebooks/tasks/task1/task/images/100epochs.PNG (127.0.0.1) 0.61ms
+
+2019-07-04 09:12:15,659 DEBG 'jupyter_notebook' stderr output:
+[I 09:12:15.659 NotebookApp] Adapting to protocol v5.1 for kernel 370cef6b-24db-43ee-a368-fa379e9603d1
+
+2019-07-04 09:12:15,848 DEBG 'jupyter_notebook' stderr output:
+[I 09:12:15.848 NotebookApp] 302 GET /g0YLQv2E/notebooks/tasks/task1/task/images/TestLouie100.PNG (127.0.0.1) 0.63ms
+
+2019-07-04 09:12:16,153 DEBG 'jupyter_notebook' stderr output:
+[I 09:12:16.153 NotebookApp] 302 GET /g0YLQv2E/notebooks/tasks/task1/task/images/correctclass.PNG (127.0.0.1) 0.61ms
+
+2019-07-04 09:12:22,866 DEBG 'jupyter_notebook' stderr output:
+[I 09:12:22.866 NotebookApp] Starting buffering for 370cef6b-24db-43ee-a368-fa379e9603d1:18479a4215e244b0afa2180126bfb33b
+
+2019-07-04 09:13:15,640 DEBG 'jupyter_notebook' stderr output:
+[I 09:13:15.639 NotebookApp] New terminal with automatic name: 1
+
